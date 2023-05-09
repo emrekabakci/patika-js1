@@ -67,4 +67,43 @@ function checkTime(i)
 }
 
 window.onload = showTime;
-getName()
+getName();
+
+var myInput = document.createElement("input");
+
+myInput.setAttribute("id","inputId");
+myInput.setAttribute("type","text");
+myInput.setAttribute("value","25");
+
+var myDiv = document.createElement("div");
+myDiv.appendChild(myInput);
+
+var form = document.getElementById("formId");
+function submitForm(event){
+
+    event.preventDefault();
+
+}
+
+form.addEventListener('submit', submitForm);
+
+function formAction() {
+    var num = document.getElementById("num").value;
+    window.alert(num + " success");
+}
+
+function changeMode() {
+    var body = document.body;
+    
+
+    body.classList.toggle("dark-theme");
+    let button = document.getElementById('button');
+    
+    if (button.innerHTML == "Dark Mode") {
+       button.innerHTML = "Normal Mode";
+    } else {
+       button.innerHTML = "Dark Mode"
+    }
+ }
+
+

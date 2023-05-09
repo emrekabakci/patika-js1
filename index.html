@@ -15,7 +15,8 @@
 
     
   </head>
-  <body class="bg-dark">
+  <body>
+        <button onclick="changeMode()" id = "button" style="border-radius: 2px;">Dark Mode</button>
     <div class="text-center">
       <img
         src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
@@ -31,6 +32,9 @@
         <strong>Kodluyoruz Frontend Web Development Patikası</strong>'nın
         Javascript bölümü 1. Ödevindesiniz.
       </div>
+    </div>
+    <div class="form">
+      <form id="formId" onsubmit="formAction()">Number (from 1 to 100) :<input style="border-radius: 4px;" type="number" id="num" size="15" name="num"><input style="border-radius: 4px;" type="submit" value="submit"></form>
     </div>
     <script src="js/clock.js"></script>
     <script src="getter.js"></script>
